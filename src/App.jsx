@@ -4,7 +4,7 @@ import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 const initialData = {
   Todo: [],
-  "Kaam ho rha hai": [],
+  "In Progress": [],
   Done: [],
 };
 
