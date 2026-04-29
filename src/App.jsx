@@ -14,9 +14,18 @@ function App() {
 
   // Load from localStorage
   useEffect(() => {
-    const saved = JSON.parse(localStorage.getItem("columns"));
-    if (saved) setColumns(saved);
-  }, []);
+  const saved = JSON.parse(localStorage.getItem("columns"));
+
+  if (saved) {
+    // Fix old "Todo" data automatically
+    if (saved.Todo) {
+      saved.Backlog = saved.Todo;
+      delete saved.Todo;
+    }
+
+    setColumns(saved);
+  }
+}, []);
 
   // Save to localStorage
   useEffect(() => {
