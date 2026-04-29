@@ -12,7 +12,7 @@ function App() {
       <section className="hero">
         <h1>Automated React Deployment</h1>
         <p>Using GitHub, AWS CodePipeline & S3</p>
-        <a href="#" target="_blank">
+        <a href="https://iinternshipproject.s3.ap-south-1.amazonaws.com/index.html" target="_blank">
           <button className="btn">View Live Project</button>
         </a>
       </section>
