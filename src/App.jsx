@@ -16,9 +16,13 @@ function App() {
 
       {/* Hero */}
       <section className="hero">
-        <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          Automate Your Deployment ⚡
-        </motion.h1>
+        <motion.h1
+  initial={{ opacity: 0, y: -50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+>
+  Automate Your Deployment ⚡
+</motion.h1>
         <p>CI/CD with GitHub, AWS CodePipeline & S3</p>
 
         <div className="hero-buttons">
