@@ -1,46 +1,64 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #0f172a;
   color: white;
 }
 
 /* Navbar */
 .navbar {
-  background: #020617;
-  padding: 15px 30px;
+  background: rgba(2, 6, 23, 0.8);
+  padding: 20px;
   text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  backdrop-filter: blur(10px);
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #1e3a8a, #020617);
   text-align: center;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #3b82f6, #06b6d4);
+  padding: 40px;
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 48px;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  margin: 10px 0;
+  opacity: 0.8;
+  font-size: 18px;
 }
 
 /* Button */
 .btn {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: white;
-  color: black;
+  margin-top: 25px;
+  padding: 14px 28px;
+  border-radius: 8px;
   border: none;
-  border-radius: 5px;
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  color: white;
+  font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
 }
 
 /* Sections */
 .section {
-  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
   text-align: center;
 }
 
@@ -48,28 +66,27 @@ body {
 .cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .card {
-  background: white;
-  color: black;
-  padding: 20px;
-  border-radius: 10px;
-  width: 180px;
-  font-weight: bold;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  width: 200px;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
-/* Workflow */
-.flow {
-  font-size: 18px;
-  margin-top: 10px;
+.card:hover {
+  transform: translateY(-10px);
 }
 
 /* Footer */
 .footer {
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   background: #020617;
 }
