@@ -33,7 +33,7 @@ function App() {
 
     setColumns({
       ...columns,
-      Todo: [...columns.Todo, newTask],
+      Backlog: [...columns.Backlog, newTask], // ✅ FIXED HERE
     });
 
     setInput("");
@@ -59,11 +59,9 @@ function App() {
 
     const draggedItem = sourceCol[source.index];
 
-    // Remove from source
     const newSource = [...sourceCol];
     newSource.splice(source.index, 1);
 
-    // Add to destination
     const newDest = [...destCol];
     newDest.splice(destination.index, 0, draggedItem);
 
