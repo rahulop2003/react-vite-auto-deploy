@@ -3,7 +3,7 @@ import "./App.css";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 
 const initialData = {
-  Todo: [],
+  Backlog: [],
   "In Progress": [],
   Done: [],
 };
